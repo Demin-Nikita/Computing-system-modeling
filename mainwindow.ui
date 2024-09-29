@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1226</width>
+    <height>733</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="TaskConfirmButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>400</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Сonfirm</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="firstUnitProgressBar">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>492</y>
+      <width>380</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="firstUnitProgressLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>490</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Computing unit-1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="secondUnitProgressLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>538</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Computing unit-2</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="secondUnitProgressBar">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>540</y>
+      <width>380</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="thirdUnitProgressLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>588</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Computing unit-3</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="thirdUnitProgressBar">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>590</y>
+      <width>380</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fourthUnitProgressLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>638</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Computing unit-4</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="fourthUnitProgressBar">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>640</y>
+      <width>380</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="timeLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>450</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>70</y>
+      <width>541</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="rowCount">
+     <number>10</number>
+    </property>
+    <property name="columnCount">
+     <number>4</number>
+    </property>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column>
+     <property name="text">
+      <string>name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>source id</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>start time</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>execution time</string>
+     </property>
+    </column>
+   </widget>
+   <zorder>TaskConfirmButton</zorder>
+   <zorder>firstUnitProgressBar</zorder>
+   <zorder>firstUnitProgressLabel</zorder>
+   <zorder>secondUnitProgressLabel</zorder>
+   <zorder>secondUnitProgressBar</zorder>
+   <zorder>thirdUnitProgressLabel</zorder>
+   <zorder>thirdUnitProgressBar</zorder>
+   <zorder>fourthUnitProgressLabel</zorder>
+   <zorder>fourthUnitProgressBar</zorder>
+   <zorder>tableWidget</zorder>
+   <zorder>timeLabel</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1226</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTask_Manager">
+    <property name="title">
+     <string>Task Manager</string>
+    </property>
+   </widget>
+   <addaction name="menuTask_Manager"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
