@@ -30,9 +30,13 @@ void ComputingUnit::getNewTask() {
     }
 }
 
+void ComputingUnit::setTask(std::unique_ptr<Task> t) {
+    task_ = std::move(t);
+}
+
 void ComputingUnit::ExecTask() {
     if (task_ != nullptr) {
-        QTimer::singleShot(6000, this, [this]() {
+        QTimer::singleShot(task_->getExecTime() * 100, this, [this]() {
             qDebug() << "Unit" << name_ << "finished task:" << task_->getName();
             task_ = nullptr;
         });
@@ -42,6 +46,3 @@ void ComputingUnit::ExecTask() {
 bool ComputingUnit::ready() const {
     return task_ == nullptr;
 }
-
-std::shared_ptr<Buffer> buf_;
-std::shared_ptr<Task> task_;

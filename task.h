@@ -15,6 +15,7 @@ public:
     Task(std::string name, TaskSource* sourse, int executionTime);
     TaskSource* getSource();
     std::string getName();
+    int getExecTime();
     void execute();
 };
 

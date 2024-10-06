@@ -15,6 +15,10 @@ std::string Task::getName() {
     return name_;
 }
 
+int Task::getExecTime() {
+    return executionTime_;
+}
+
 void Task::execute() {
     std::cout << "Executing " << name_ << std::endl;
 }

@@ -12,6 +12,7 @@ void Buffer::addTaskToBuffer(TaskPtr t) {
 
     if (TasksInBuffer_ < numOfSlots_) {
         memory_->push_back(std::move(t));
+        TasksInBuffer_++;
     }
     else {
         int mnPriority = 0;
@@ -47,6 +48,7 @@ std::unique_ptr<Task> Buffer::getTask() {
     } else {
         nextTask = std::move(*forExec);
         memory_->erase(forExec);
+        TasksInBuffer_--;
     }
     return nextTask;
 }

@@ -28,6 +28,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         buffer.h buffer.cpp
         task.h task.cpp
         tasksource.h tasksource.cpp
+        taskmanager.h taskmanager.cpp
 
     )
 # Define target properties for Android with Qt 6 as:

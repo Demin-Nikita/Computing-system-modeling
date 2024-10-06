@@ -13,6 +13,8 @@ class ComputingUnit : public QThread {
 public:
     ComputingUnit(QObject *parent, std::shared_ptr<Buffer> buf, int name);
     ~ComputingUnit();
+    bool ready() const;
+    void setTask(std::unique_ptr<Task> t);
 
 protected:
     void run() override;
@@ -22,7 +24,6 @@ private slots:
     void ExecTask();
 
 private:
-    bool ready() const;
     std::shared_ptr<Buffer> buf_;
     std::shared_ptr<Task> task_;
     int name_;
